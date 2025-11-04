@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EJS Practice</title>
 </head>
 <body>
-    
+    <h1>EJS Practice</h1>
+    <h2>Hello, <%= person.name %></h2>
+    <h3>Your job is <%= person.occupation %> and your favorite color is <%= person.favColor %></h3>
+    <% if (person.occupation === 'plumber') { %>
+        <p>You work with pipes!</p>
+    <% } else { %>
+        <p>That's an interesting job!</p>
+    <% } %>
 </body>
 </html>
